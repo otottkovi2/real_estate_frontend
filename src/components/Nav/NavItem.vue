@@ -11,7 +11,8 @@ let isMenuOpen = ref(false)
 
 <template>
   <div class="flex flex-col justify-between">
-    <div class="bg-white flex justify-between gap-x-1 z-50 border-2 border-gray-500 rounded-md p-2 shadow-lg hover:bg-gray-100 active:bg-gray-300">
+    <div class="bg-white flex justify-between gap-x-1 z-50 border-2 border-gray-500 rounded-md p-2 shadow-lg
+    hover:bg-gray-100 active:bg-gray-300">
       <a class="relative" :href="url">{{ itemName }}</a>
       <div v-if="hasSuboptions" @click="isMenuOpen = !isMenuOpen" @focus="isMenuOpen = true"
            @blur="isMenuOpen = false" class="cursor-pointer">V</div>
