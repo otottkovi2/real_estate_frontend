@@ -1,5 +1,6 @@
 <script setup>
 import {ref} from 'vue'
+import {RouterLink} from "vue-router";
 
 const parameters = defineProps(["title", "url", "options"])
 const itemName = parameters.title
@@ -20,7 +21,7 @@ let isMenuOpen = ref(false)
     <Transition>
       <div v-if="isMenuOpen" class="border border-t-0 border-gray-500 rounded-b-md p-2 shadow-md relative z-10">
         <div v-for="s in suboptions">
-          <a :href="s.url">{{ s.title }}</a>
+          <RouterLink :to="s.url">{{ s.title }}</RouterLink>
         </div>
       </div>
     </Transition>
