@@ -9,12 +9,16 @@ import NavItem from "@/components/Nav/NavItem.vue";
     logo goes here
   </div>
   <ul class="flex flex-row justify-between shrink-0 col-span-3 col-start-2">
-    <li><NavItem title="Home" url="/" :options="[]"></NavItem></li>
-    <li><NavItem title="Option 1" url="/" :options="[{title:'hello',url:'/'},
-      {title: 'hello 2',url: '/'},{title: 'hello 3', url: '/'}]">
+    <li><NavItem title="Home" url="/"></NavItem></li>
+    <li><NavItem title="Option 1" url="/">
+      <ul>
+        <li><NavItem title="Suboption 1" url="/somewhere_else"></NavItem></li>
+        <li><NavItem title="Suboption 2" url="/"></NavItem></li>
+        <li><NavItem title="Suboption 3"></NavItem></li>
+      </ul>
     </NavItem></li>
-    <li><NavItem title="Option 3" url="/" :options="[]"></NavItem></li>
-    <li><NavItem title="Option 4" url="/" :options="[]"></NavItem></li>
+    <li><NavItem title="Option 3" url="/"></NavItem></li>
+    <li><NavItem title="Option 4" url="/"></NavItem></li>
   </ul>
 </nav>
 </template>
