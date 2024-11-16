@@ -8,9 +8,13 @@ import Button from "@/components/Controls/Button.vue"
 <template>
   <TitleText>Control demos</TitleText>
   <div class="grid grid-cols-3">
-    <Card>1</Card>
     <Card>
+      <template #card-header>
+        <SubTitleText>Button</SubTitleText>
+      </template>
+      <template #default>
         <Button name="Button" :onClick="()=>{}"></Button>
+      </template>
     </Card>
     <Card>2</Card>
     <Card>3</Card>
