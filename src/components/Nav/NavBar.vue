@@ -4,7 +4,7 @@ import NavItem from "@/components/Nav/NavItem.vue";
 </script>
 
 <template>
-<nav class="grid grid-cols-4 w-7/12 p-6 mb-4 sticky top-0 bg-white bg-opacity-75 rounded-md">
+<nav class="grid grid-cols-4 w-7/12 p-4 mb-4 sticky top-0 bg-white bg-opacity-75 rounded-md">
   <div>
     logo goes here
   </div>
