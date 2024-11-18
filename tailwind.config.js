@@ -5,7 +5,11 @@ export default {
       "./src/**/*.{vue,js,ts}"
   ],
   theme: {
-    extend: {},
+    extend: {
+        margin: {
+            '6/12': "50%"
+        }
+    },
   },
   plugins: [],
 }

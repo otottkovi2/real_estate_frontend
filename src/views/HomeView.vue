@@ -5,6 +5,7 @@ import Card from "@/components/Layout/Card.vue"
 import Button from "@/components/Controls/Button.vue"
 import Checkbox from "@/components/Controls/Checkbox.vue";
 import {ref} from "vue";
+import ImagePicker from "@/components/Controls/ImagePicker.vue";
 
 let isBoxChecked = ref(false)
 function toggleBox(id)  {
@@ -36,7 +37,9 @@ function toggleBox(id)  {
         <div class="text-red-700" v-else>This box is unchecked!</div>
       </template>
     </Card>
-    <Card>3</Card>
+    <Card>
+      <ImagePicker></ImagePicker>
+    </Card>
   </div>
 </template>
 
