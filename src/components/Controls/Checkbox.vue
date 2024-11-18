@@ -20,7 +20,7 @@ const checkId = props.id
     {{label}}
     <input type="checkbox" :id="'check' + checkId" @change="$emit('boxChecked','1')"
     class="appearance-none relative size-5 border-2 border-gray-500 align-bottom
-     before:content-['×'] before:relative before:-top-3 before:-right-0.5 before:text-xs before:origin-bottom
-      before:align-[-5px] checked:before:text-2xl before:transition-all before:duration-100">
+     before:content-['✓'] before:relative before:-top-3 before:-right-0.5 before:text-xs before:origin-bottom before:invisible
+      before:align-[-5px] checked:before:text-2xl checked:before:visible before:transition-all before:duration-100">
   </label>
 </template>

@@ -20,7 +20,7 @@ const keyboardOpenMenu = (ev) => {
     hover:bg-gray-100 active:bg-gray-300 focus:bg-gray-300">  <!--FIXME:weird sizing-->
       <RouterLink class="relative" :to="url">{{ itemName }}</RouterLink>
       <div v-if="$slots.length !== 0" @click="isMenuOpen = !isMenuOpen" @keydown="keyboardOpenMenu"
-           class="cursor-pointer focus:border-2" tabindex="0" role="button">V</div> <!--TODO: make properly accessible-->
+           class="cursor-pointer" tabindex="0" role="button">V</div>
     </div>
     <Transition>
       <div v-if="isMenuOpen" class="border border-t-0 border-gray-500 rounded-b-md p-2 shadow-md relative z-10">
