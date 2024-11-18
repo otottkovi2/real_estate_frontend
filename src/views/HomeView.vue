@@ -1,16 +1,22 @@
 <script setup>
+import {ref} from "vue";
 import TitleText from "@/components/Pre-styled/TitleText.vue";
 import SubTitleText from "@/components/Pre-styled/SubTitleText.vue";
 import Card from "@/components/Layout/Card.vue"
 import Button from "@/components/Controls/Button.vue"
 import Checkbox from "@/components/Controls/Checkbox.vue";
-import {ref} from "vue";
 import ImagePicker from "@/components/Controls/ImagePicker.vue";
 
 let isBoxChecked = ref(false)
+const uploadedFiles = ref([])
 function toggleBox(id)  {
   if(id !== "1") return
   isBoxChecked.value = !isBoxChecked.value
+}
+
+function listUploadedFiles(paths) {
+  console.log(paths)
+  uploadedFiles.value = paths
 }
 </script>
 
@@ -38,7 +44,17 @@ function toggleBox(id)  {
       </template>
     </Card>
     <Card>
-      <ImagePicker></ImagePicker>
+      <template #card-header>
+        <SubTitleText>Image Picker</SubTitleText>
+      </template>
+      <template #default>
+        <ImagePicker :showPreviews="false" @file-uploaded="listUploadedFiles"></ImagePicker>
+      </template>
+      <template #card-footer>
+        <ul>
+          <li v-for="path in uploadedFiles">{{path}}</li>
+        </ul>
+      </template>
     </Card>
   </div>
 </template>
