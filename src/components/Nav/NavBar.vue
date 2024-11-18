@@ -4,12 +4,12 @@ import NavItem from "@/components/Nav/NavItem.vue";
 </script>
 
 <template>
-<nav class="grid grid-cols-4 w-7/12 p-4 mb-4 sticky top-0 bg-white bg-opacity-75 rounded-md">
-  <div>
-    logo goes here
+<nav class="inline-flex flex-row sticky gap-2 text-left w-full flex justify-between">
+  <div class="ml-48">
+    <RouterLink to="/">Logo</RouterLink>
   </div>
-  <ul class="flex flex-row justify-between shrink-0 col-span-3 col-start-2">
-    <li><NavItem title="Home" url="/"></NavItem></li>
+  <ul class="inline-flex flex-row   col-span-3 col-start-2  flex justify-end gap-2 mr-48">
+  
     <li><NavItem title="Option 1" url="/">
       <ul>
         <li><NavItem title="Suboption 1" url="/somewhere_else"></NavItem></li>
