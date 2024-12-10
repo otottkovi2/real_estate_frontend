@@ -6,6 +6,7 @@ import Card from "@/components/Layout/Card.vue"
 import Button from "@/components/Controls/Button.vue"
 import Checkbox from "@/components/Controls/Checkbox.vue";
 import ImagePicker from "@/components/Controls/ImagePicker.vue";
+import HousePreview from "@/components/Layout/HousePreview.vue";
 </script>
 
 <template>
@@ -41,18 +42,29 @@ import ImagePicker from "@/components/Controls/ImagePicker.vue";
     <h5 class="text-lg font-semibold">Fontos Önnek a gyorsaság, precizitás, tapasztalat, korrektség?</h5>
     <h3 class="text-xl font-semibold ml-2">Jó helyen van!</h3>
   </section>
-  <section class="min-h-lvh border-2 border-gray-500 rounded-md flex">
-    <SubTitleText>House highlights go here</SubTitleText>
+  <section class="min-h-lvh">
+    <card class="h-full">
+      <template #card-header>
+        <SubTitleText>House highlights go here</SubTitleText>
+      </template>
+      <template #default>
+        <HousePreview title="A very nice (and expensive) house in Rásonyápberencs, I want to make sure this title is
+long enough so I can test how well long titles fit in this component" img-src="/a_house_800x.jpg"
+                      location="Rásonyápberencs, Borsod-Abaúj-Zemplén" price="5000000000" area="800000"
+                      room-count="3000"></HousePreview>
+        <HousePreview title="A short title" img-src=""></HousePreview>
+      </template>
+    </card>
   </section>
 </template>
 
 <style scoped>
-p,ul {
+p, ul {
   margin-bottom: 6pt;
 }
 
 li {
   list-style: disc;
-  margin-left:3rem;
+  margin-left: 3rem;
 }
 </style>
