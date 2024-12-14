@@ -55,10 +55,10 @@ const doNothing = (ev) => {
 
 <template>
   <div>
-    <div class="border-2 my-2 border-dashed border-grey-300 cursor-pointer" @drop="dropToPicker"
+    <div class="border-2 my-2 border-dashed border-secondary cursor-pointer" @drop="dropToPicker"
          @click="clickOnFilePicker()" @dragover="doNothing" @dragenter="doNothing" @dragleave="doNothing"
          @keydown="keyboardOpenPicker" tabindex="0">
-      <div class="text-center my-6/12 w-max mx-2 text-gray-300">Drag images here or click to upload files</div>
+      <div class="text-center my-6/12 w-max mx-2 text-secondary">Drag images here or click to upload files</div>
     </div>
     <input type="file" tabindex="-1" class="hidden" multiple @change="submitFromPicker">
     <Button v-if="imgPaths.length > 0" :on-click="resetImages" name="Reset"></Button>

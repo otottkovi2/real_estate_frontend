@@ -6,7 +6,7 @@ import HousePreview from "@/components/Layout/HousePreview.vue";
 </script>
 
 <template>
-  <section class="min-h-96 border-2 border-gray-500 rounded-md flex justify-center items-center shadow-md
+  <section class="min-h-96 border-2 border-primary rounded-md flex justify-center items-center shadow-md
   hover:shadow-inner">
     <TitleText>Hero/Welcome image</TitleText>
   </section>
@@ -52,6 +52,17 @@ long enough so I can test how well long titles fit in this component" img-src="/
       </template>
     </card>
   </section>
+  <footer class="min-h-72 bg-tertiary">
+    <div class="flex flex-col pl-8 pt-8 text-secondary">
+      <TitleText>Hungingatlan Kft</TitleText>
+      <SubTitleText>Kapcsolat:</SubTitleText>
+      <ul class="list-none">
+        <li>Telefon: +36 30 176 1931</li>
+        <li>E-mail: <a href="mailto:unginetunde.hungingatlan@gmail.com" class="underline hover:text-white">
+          unginetunde.hungingatlan@gmail.com</a></li>
+      </ul>
+    </div>
+  </footer>
 </template>
 
 <style scoped>
@@ -62,5 +73,9 @@ p, ul {
 li {
   list-style: disc;
   margin-left: 3rem;
+}
+
+footer ul li {
+  list-style-type: none;
 }
 </style>

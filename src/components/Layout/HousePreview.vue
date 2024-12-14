@@ -33,9 +33,9 @@ window.addEventListener('resize',resizeTitle)
         <SubTitleText class="col-start-2 col-span-3 row-start-1" :title="title">{{ displayTitle }}</SubTitleText>
         <i class="col-start-2 col-span-2 row-start-2 ml-2">{{ location }}</i>
         <div class="col-start-2 row-start-3 row-span-2 text-2xl font-semibold ml-2 tracking-wide">{{ price }} Ft</div>
-        <hr class="border-2 border-gray-300 rounded-md col-start-2 col-span-3 row-start-4 ml-2 mb-2 self-end">
+        <hr class="border-2 border-secondary rounded-md col-start-2 col-span-3 row-start-4 ml-2 mb-2 self-end">
         <div class="col-start-2 row-start-5 mr-3/12 text-right my-auto text-lg font-thin">{{ area }} m<sup>2</sup></div>
-        <div class="col-start-3 row-start-5 border-l-2 border-gray-300 rounded-md mx-auto"></div>
+        <div class="col-start-3 row-start-5 border-l-2 border-secondary rounded-md mx-auto"></div>
         <div class="col-start-4 row-start-5 my-auto ml-3/12 text-left text-lg font-thin">{{ roomCount }} szoba</div>
       </div>
     </template>
