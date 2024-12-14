@@ -6,8 +6,12 @@ export default {
   ],
   theme: {
     extend: {
+        aspectRatio: {
+          'photo': '4 / 3'
+        },
         margin: {
-            '6/12': "50%"
+            '6/12': "50%",
+            '3/12': "25%"
         }
     },
   },
