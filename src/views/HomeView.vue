@@ -1,11 +1,7 @@
 <script setup>
-import {ref} from "vue";
 import TitleText from "@/components/Pre-styled/TitleText.vue";
 import SubTitleText from "@/components/Pre-styled/SubTitleText.vue";
 import Card from "@/components/Layout/Card.vue"
-import Button from "@/components/Controls/Button.vue"
-import Checkbox from "@/components/Controls/Checkbox.vue";
-import ImagePicker from "@/components/Controls/ImagePicker.vue";
 import HousePreview from "@/components/Layout/HousePreview.vue";
 </script>
 
@@ -14,7 +10,7 @@ import HousePreview from "@/components/Layout/HousePreview.vue";
   hover:shadow-inner">
     <TitleText>Hero/Welcome image</TitleText>
   </section>
-  <section>
+  <section class="my-2">
     <SubTitleText>description:</SubTitleText>
     <p>Az ingatlan adásvétel életünk során az egyik legjelentősebb pénzügyi döntésünk egyike.</p>
     <p>Mind eladói, mind vevői oldalról fontos, hogy zökkenőmentesen és minél kedvezőbb áron bonyolódjon le az ügylet.
@@ -40,7 +36,7 @@ import HousePreview from "@/components/Layout/HousePreview.vue";
       <li>Kisebb felújítási-, javítási munkálatok</li>
     </ul>
     <h5 class="text-lg font-semibold">Fontos Önnek a gyorsaság, precizitás, tapasztalat, korrektség?</h5>
-    <h3 class="text-xl font-semibold ml-2">Jó helyen van!</h3>
+    <h3 class="text-xl font-semibold">Jó helyen van!</h3>
   </section>
   <section class="min-h-lvh">
     <card class="h-full">
