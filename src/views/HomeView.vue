@@ -38,7 +38,7 @@ import PageIntro from "@/components/Layout/PageIntro.vue";
     <h5 class="text-lg font-semibold">Fontos Önnek a gyorsaság, precizitás, tapasztalat, korrektség?</h5>
     <h3 class="text-xl font-semibold">Jó helyen van!</h3>
   </section>
-  <section class="min-h-lvh">
+  <section class="min-h-full">
     <card class="h-full">
       <template #card-header>
         <SubTitleText>House highlights go here</SubTitleText>
@@ -52,15 +52,16 @@ long enough so I can test how well long titles fit in this component" img-src="/
       </template>
     </card>
   </section>
-  <footer class="min-h-72 bg-tertiary">
-    <div class="flex flex-col pl-8 pt-8 text-secondary">
-      <TitleText>Hungingatlan Kft</TitleText>
+  <footer class="h-72 bg-tertiary top-3/4">
+    <div class="flex flex-col p-8 text-secondary h-72">
+      <SubTitleText class="text-left">Hungingatlan Kft</SubTitleText>
       <SubTitleText>Kapcsolat:</SubTitleText>
       <ul class="list-none">
         <li>Telefon: +36 30 176 1931</li>
-        <li>E-mail: <a href="mailto:unginetunde.hungingatlan@gmail.com" class="underline hover:text-white">
+        <li>E-mail: <a href="mailto:unginetunde.hungingatlan@gmail.com" class="underline text-sm md:text-base hover:text-white">
           unginetunde.hungingatlan@gmail.com</a></li>
       </ul>
+      <div class="md:mt-20 mt-10 text-center">Készítette <a href="https://github.com/otottkovi2" class="underline hover:text-white">Ótott-Kovács Tamás</a></div>
     </div>
   </footer>
 </template>
