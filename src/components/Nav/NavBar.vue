@@ -1,24 +1,14 @@
 <script setup>
-
-import NavItem from "@/components/Nav/NavItem.vue";
 </script>
 
 <template>
-<nav class="grid grid-cols-4 w-7/12 p-4 mb-4 sticky top-0 bg-white bg-opacity-75 rounded-b-md">
+<nav class="grid grid-rows-4 grid-cols-1 md:grid-cols-4 md:grid-rows-1 w-7/12 p-4 mb-4 md:sticky top-0 bg-white
+bg-opacity-75 rounded-b-md">
   <div>
     logo goes here
   </div>
-  <ul class="flex flex-row justify-between shrink-0 col-span-3 col-start-2">
-    <li><NavItem title="Home" url="/"></NavItem></li>
-    <li><NavItem title="Option 1" url="/">
-      <ul>
-        <li><NavItem title="Suboption 1" url="/somewhere_else"></NavItem></li>
-        <li><NavItem title="Suboption 2" url="/"></NavItem></li>
-        <li><NavItem title="Suboption 3"></NavItem></li>
-      </ul>
-    </NavItem></li>
-    <li><NavItem title="Option 3" url="/"></NavItem></li>
-    <li><NavItem title="Option 4" url="/"></NavItem></li>
+  <ul class="flex flex-col gap-2 md:flex-row justify-between shrink-0 col-start-1 row-start-2 row-span-3 md:col-span-3
+  md:col-start-2">
   </ul>
 </nav>
 </template>
