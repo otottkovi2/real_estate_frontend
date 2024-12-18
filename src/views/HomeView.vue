@@ -3,12 +3,12 @@ import TitleText from "@/components/Pre-styled/TitleText.vue";
 import SubTitleText from "@/components/Pre-styled/SubTitleText.vue";
 import Card from "@/components/Layout/Card.vue"
 import HousePreview from "@/components/Layout/HousePreview.vue";
+import PageIntro from "@/components/Layout/PageIntro.vue";
 </script>
 
 <template>
-  <section class="min-h-96 border-2 border-primary rounded-md flex justify-center items-center shadow-md
-  hover:shadow-inner">
-    <TitleText>Hero/Welcome image</TitleText>
+  <section>
+    <PageIntro/>
   </section>
   <section class="my-2">
     <SubTitleText>description:</SubTitleText>
