@@ -1,5 +1,4 @@
 <script setup>
-import TitleText from "@/components/Pre-styled/TitleText.vue";
 import SubTitleText from "@/components/Pre-styled/SubTitleText.vue";
 import Card from "@/components/Layout/Card.vue"
 import HousePreview from "@/components/Layout/HousePreview.vue";
